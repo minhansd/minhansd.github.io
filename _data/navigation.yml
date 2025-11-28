@@ -24,7 +24,7 @@ main:
   #   url: /year-archive/
 
   - title: "CV"
-    url: /_files/CV.pdf
+    url: /files/CV.pdf
     external: true
 
   # - title: "CV"

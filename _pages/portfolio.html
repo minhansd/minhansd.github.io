@@ -2,23 +2,12 @@
 layout: archive
 title: "Portfolio"
 permalink: /portfolio/
-collection: portfolio
 ---
 
-## Research Projects
-{% assign research = site.portfolio | where: "category", "research" %}
-{% for item in research %}
-  {% include archive-single.html %}
-{% endfor %}
-
-## Design Work
-{% assign design = site.portfolio | where: "category", "design" %}
-{% for item in design %}
-  {% include archive-single.html %}
-{% endfor %}
-
-## Programming
-{% assign programming = site.portfolio | where: "category", "programming" %}
-{% for item in programming %}
-  {% include archive-single.html %}
+{% assign groups = site.portfolio | group_by: "category" %}
+{% for group in groups %}
+  <h2>{{ group.name }}</h2>
+  {% for item in group.items %}
+    {% include archive-single.html %}
+  {% endfor %}
 {% endfor %}

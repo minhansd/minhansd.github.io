@@ -8,6 +8,6 @@ permalink: /portfolio/
 {% for group in groups %}
   <h2>{{ group.name }}</h2>
   {% for item in group.items %}
-    {% include archive-single.html %}
+    {% include archive-single.html post=item %}
   {% endfor %}
 {% endfor %}

@@ -2,13 +2,23 @@
 layout: archive
 title: "Portfolio"
 permalink: /portfolio/
-author_profile: true
+collection: portfolio
 ---
 
-{% include base_path %}
-
-
-{% for post in site.portfolio %}
+## Research Projects
+{% assign research = site.portfolio | where: "category", "research" %}
+{% for item in research %}
   {% include archive-single.html %}
 {% endfor %}
 
+## Design Work
+{% assign design = site.portfolio | where: "category", "design" %}
+{% for item in design %}
+  {% include archive-single.html %}
+{% endfor %}
+
+## Programming
+{% assign programming = site.portfolio | where: "category", "programming" %}
+{% for item in programming %}
+  {% include archive-single.html %}
+{% endfor %}

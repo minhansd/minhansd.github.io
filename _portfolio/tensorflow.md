@@ -1,8 +1,7 @@
 ---
 title: "Tensorflow Work (Cognicom)"
-category: "Internships"
-layout: portfolio
 excerpt: "TensorFlow classification, supervised/unsupervised learning, Fashion-MNIST"
+collection: portfolio
 ---
 
 - Experimented with TensorFlow to find signal classification algorithms

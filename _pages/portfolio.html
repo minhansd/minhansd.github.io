@@ -7,10 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign groups = site.portfolio | group_by: "category" %}
-{% for group in groups %}
-  <h2>{{ group.name }}</h2>
-  {% for item in group.items %}
-    {% include archive-single.html post=item %}
-  {% endfor %}
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
 {% endfor %}

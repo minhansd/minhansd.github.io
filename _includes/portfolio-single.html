@@ -111,27 +111,27 @@
       {% assign website = post.links_to_website | default: post.website | default: post.demo %}
       {% if website and website != "" and website != "N/A" %}
         <a href="{{ website }}" target="_blank"
-          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          style="background:#1F77B4; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
           onmouseover="this.style.opacity=0.85"
           onmouseout="this.style.opacity=1">
-          Website
+          <b>Website</b>
         </a>
       {% endif %}
 
       {% assign paper = post.arxiv | default: post.paper %}
       {% if paper and paper != "" and paper != "N/A" %}
         <a href="{{ paper }}" target="_blank"
-          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          style="background:#1F77B4; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
           onmouseover="this.style.opacity=0.85"
           onmouseout="this.style.opacity=1">
-          Paper
+          <b>Paper</b>
         </a>
       {% endif %}
 
       {% assign code_link = post.links_to_code | default: post.code | default: post.repo %}
       {% if code_link and code_link != "" and code_link != "N/A" %}
         <a href="{{ code_link }}" target="_blank"
-          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          style="background:#1F77B4; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
           onmouseover="this.style.opacity=0.85"
           onmouseout="this.style.opacity=1">
           Code
@@ -141,28 +141,28 @@
       {% assign video = post.links_to_video | default: post.video %}
       {% if video and video != "" and video != "N/A" %}
         <a href="{{ video }}" target="_blank"
-          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          style="background:#1F77B4; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
           onmouseover="this.style.opacity=0.85"
           onmouseout="this.style.opacity=1">
-          Video
+          <b>Video</b>
         </a>
       {% endif %}
 
       {% if post.slides and post.slides != "" and post.slides != "N/A" %}
         <a href="{{ post.slides }}" target="_blank"
-          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          style="background:#1F77B4; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
           onmouseover="this.style.opacity=0.85"
           onmouseout="this.style.opacity=1">
-          Slides
+          <b>Slides</b>
         </a>
       {% endif %}
 
       {% if post.docs and post.docs != "" and post.docs != "N/A" %}
         <a href="{{ post.docs }}" target="_blank"
-          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          style="background:#1F77B4; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
           onmouseover="this.style.opacity=0.85"
           onmouseout="this.style.opacity=1">
-          Docs
+          <b>Docs</b>
         </a>
       {% endif %}
 

@@ -9,6 +9,6 @@ author_profile: true
 
 {% for post in site.portfolio reversed %}
   {% if post.include_on_website %}
-    {% include project-single.html %}
+    {% include portfolio-single.html %}
   {% endif %}
 {% endfor %}

@@ -20,7 +20,7 @@
     <!-- Image (optional) -->
     <td style="width: 300px">
       {% if post.image and post.image != "" and post.image != "N/A" %}
-        <img src="/images/publications/{{ post.image }}"
+        <img src="/images/portfolio/{{ post.slug }}/{{ post.image }}"
              width="250"
              style="border: 2px black; float:left; margin-right:15px; border-radius: 5px; border-style: none;" />
       {% elsif post.header.teaser %}

@@ -16,9 +16,9 @@ author_profile: true
   {% endif %}
 {% endfor %}
 
-{# Optional: render anything not listed at the end #}
+<!-- {# Optional: render anything not listed at the end #}
 {% for post in shown %}
   {% unless site.data.portfolio_order contains post.slug %}
     {% include portfolio-single.html %}
   {% endunless %}
-{% endfor %}
+{% endfor %} -->

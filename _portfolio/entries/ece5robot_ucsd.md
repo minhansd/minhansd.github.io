@@ -6,7 +6,6 @@ year: "2023"
 status: "Finished"
 # arxiv: "..."
 include_on_website: true
-weight: 2
 image: "robot_full.png"
 # links_to_code: ""
 # links_to_video: ""

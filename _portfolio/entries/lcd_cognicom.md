@@ -6,7 +6,6 @@ year: "2023"
 status: "Finished"
 # arxiv: "..."
 include_on_website: true
-weight: 3
 image: "lcd_on.png"
 # links_to_code: ""
 # links_to_video: ""

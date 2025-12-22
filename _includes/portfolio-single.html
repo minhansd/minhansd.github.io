@@ -14,95 +14,75 @@
 
 {% assign kind = post.kind | default: "publication" %}
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+<div style="display: flex; align-items: flex-start; margin-bottom: 35px;">
 
   <!-- Image (optional) -->
-  <div style="flex: 0 0 330px; margin-right: 20px;">
+  <div style="flex: 0 0 380px; margin-right: 25px;">
     {% if post.image and post.image != "" and post.image != "N/A" %}
       <img src="/images/portfolio/{{ post.slug }}/{{ post.image }}"
-           style="width: 280px; border-radius: 5px; display:block;" />
+           style="width: 330px; border-radius: 6px; display:block;" />
     {% elsif post.header.teaser %}
       <img src="{{ post.header.teaser | relative_url }}"
-           style="width: 280px; border-radius: 5px; display:block;" />
+           style="width: 330px; border-radius: 6px; display:block;" />
     {% endif %}
   </div>
 
   <!-- Text -->
-  <div style="min-width: 0; max-width: 700px; line-height: 1.3;">
-    <h2 style="margin-top: 10px; margin-bottom: 0px;">{{ title }}</h2>
+  <div style="min-width: 0; max-width: 680px; font-size: 0.95rem; line-height: 1.25;">
 
-    <!-- Authors/Team line (optional) -->
+    <h2 style="margin-top: 6px; margin-bottom: 4px; font-size: 1.3rem;">
+      {{ title }}
+    </h2>
+
+    <!-- Authors / Team -->
     {% assign people = post.authors | default: post.team | default: "" %}
     {% if people != "" and people != "N/A" %}
       {% assign people = people | replace: '"{o}', 'ö' %}
       {% assign people = people | replace: '"{u}', 'ü' %}
-      <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">{{ people }}</h3>
+      <h3 style="font-weight: normal; margin-top: 4px; margin-bottom: 4px; font-size: 0.95rem;">
+        {{ people }}
+      </h3>
     {% endif %}
 
-    <!-- Meta line: publication venue/year/status OR project info -->
+    <!-- Meta line -->
     {% if kind == "publication" %}
-      {% if post.type contains "thesis" %}
-        <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
-          {% if post.type contains "phd" %}PhD{% else %}SM{% endif %} Thesis, {{ post.year }}
-        </h3>
-        <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">MIT Department of Mechanical Engineering</h3>
-      {% else %}
-        {% assign meta_parts = "" %}
-
-        {% if post.venue and post.venue != "" and post.venue != "N/A" %}
-          {% assign meta_parts = meta_parts | append: post.venue %}
-        {% endif %}
-
-        {% if post.year and post.year != "" and post.year != "N/A" %}
-          {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: ", " %}{% endif %}
-          {% assign meta_parts = meta_parts | append: post.year %}
-        {% elsif post.date %}
-          {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: ", " %}{% endif %}
-          {% assign meta_parts = meta_parts | append: post.date | date: "%Y" %}
-        {% endif %}
-
-        {% if meta_parts != "" %}
-          <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
-            {{ meta_parts }}
-            {% if post.status and post.status != "" and post.status != "N/A" %}
-              ({{ post.status }})
-            {% endif %}
-          </h3>
-        {% endif %}
-      {% endif %}
-    {% else %}
       {% assign meta_parts = "" %}
-
-      {% if post.role and post.role != "" and post.role != "N/A" %}
-        {% assign meta_parts = meta_parts | append: post.role %}
+      {% if post.venue and post.venue != "" and post.venue != "N/A" %}
+        {% assign meta_parts = meta_parts | append: post.venue %}
       {% endif %}
-
-      {% if post.org and post.org != "" and post.org != "N/A" %}
-        {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: " · " %}{% endif %}
-        {% assign meta_parts = meta_parts | append: post.org %}
-      {% endif %}
-
       {% if post.year and post.year != "" and post.year != "N/A" %}
-        {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: " · " %}{% endif %}
+        {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: ", " %}{% endif %}
         {% assign meta_parts = meta_parts | append: post.year %}
-      {% elsif post.date %}
-        {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: " · " %}{% endif %}
-        {% assign meta_parts = meta_parts | append: post.date | date: "%Y" %}
       {% endif %}
-
       {% if meta_parts != "" %}
-        <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
+        <h3 style="font-weight: normal; margin-top: 4px; margin-bottom: 4px; font-size: 0.9rem;">
           {{ meta_parts }}
           {% if post.status and post.status != "" and post.status != "N/A" %}
             ({{ post.status }})
           {% endif %}
         </h3>
       {% endif %}
+    {% else %}
+      {% assign meta_parts = "" %}
+      {% if post.role and post.role != "" and post.role != "N/A" %}
+        {% assign meta_parts = meta_parts | append: post.role %}
+      {% endif %}
+      {% if post.org and post.org != "" and post.org != "N/A" %}
+        {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: " · " %}{% endif %}
+        {% assign meta_parts = meta_parts | append: post.org %}
+      {% endif %}
+      {% if post.year %}
+        {% if meta_parts != "" %}{% assign meta_parts = meta_parts | append: " · " %}{% endif %}
+        {% assign meta_parts = meta_parts | append: post.year %}
+      {% endif %}
+      <h3 style="font-weight: normal; margin-top: 4px; margin-bottom: 4px; font-size: 0.9rem;">
+        {{ meta_parts }}
+      </h3>
     {% endif %}
 
     <!-- Notes (optional) -->
     {% if post.notes and post.notes != "" and post.notes != "N/A" %}
-      <h3 style="font-weight: normal; margin-top: 10px; margin-bottom: 0px;">
+      <h3 style="font-weight: normal; margin-top: 6px; margin-bottom: 0px;">
         {{ post.notes }}
       </h3>
     {% endif %}
@@ -110,7 +90,7 @@
     <!-- Description (optional, great for projects) -->
     {% assign desc = post.description | default: post.excerpt | default: "" %}
     {% if desc != "" %}
-      <p style="margin-top: 10px; margin-bottom: 0px;">
+      <p style="margin-top: 6px; margin-bottom: 0px;">
         {{ desc | markdownify | remove: "<p>" | remove: "</p>" }}
       </p>
     {% endif %}
@@ -119,14 +99,14 @@
     {% if post.awards and post.awards != "N/A" and post.awards != "" %}
       {% assign awards = post.awards | split: ", " %}
       {% for award in awards %}
-        <h3 style="color: red; margin-top: 10px; margin-bottom: 0px;">
+        <h3 style="color: red; margin-top: 6px; margin-bottom: 0px;">
           {{ award }}
         </h3>
       {% endfor %}
     {% endif %}
 
     <!-- Links row -->
-    <h3 style="margin-top: 10px; margin-bottom: 0px;">
+    <h3 style="margin-top: 6px; margin-bottom: 0px; font-size: 0.9rem;">
 
       <!-- Website / Demo -->
       {% assign website = post.links_to_website | default: post.website | default: post.demo %}

@@ -1,6 +1,6 @@
 ---
-title: "Line Following Robot"
-authors: "Anthony Nguyen, Lucas Phung, Josef Marenec, Isaac Cervantes"
+title: "PID-Controlled Line-Following Robot"
+authors: "<b>Anthony Nguyen</b>, Lucas Phung, Josef Marenec, Isaac Cervantes"
 venue: "UCSD ECE 5 Final Project"
 year: "2023"
 status: "Finished"

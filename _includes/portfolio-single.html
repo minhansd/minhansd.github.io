@@ -106,53 +106,66 @@
     {% endif %}
 
     <!-- Links row -->
-    <h3 style="margin-top: 6px; margin-bottom: 0px; font-size: 0.9rem;">
+    <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px;">
 
-      <!-- Website / Demo -->
       {% assign website = post.links_to_website | default: post.website | default: post.demo %}
       {% if website and website != "" and website != "N/A" %}
-        <a style="text-decoration: none;" href="{{ website }}" target="_blank">Website <i class="fa fa-globe"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="{{ website }}" target="_blank"
+          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          onmouseover="this.style.opacity=0.85"
+          onmouseout="this.style.opacity=1">
+          Website
+        </a>
       {% endif %}
 
-      <!-- Paper -->
       {% assign paper = post.arxiv | default: post.paper %}
       {% if paper and paper != "" and paper != "N/A" %}
-        <a style="text-decoration: none;" href="{{ paper }}" target="_blank">Paper <i class="fa fa-file"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="{{ paper }}" target="_blank"
+          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          onmouseover="this.style.opacity=0.85"
+          onmouseout="this.style.opacity=1">
+          Paper
+        </a>
       {% endif %}
 
-      <!-- Code / Repo -->
       {% assign code_link = post.links_to_code | default: post.code | default: post.repo %}
-      {% if code_link contains "," %}
-        {% assign codes = code_link | split: ", " %}
-        Code: [
-        {% for code in codes %}
-          {% assign code_info = code | split: ": " %}
-          <a style="text-decoration: none;" href="{{ code_info.last }}" target="_blank">{{ code_info.first }} <i class="fa fa-code"></i></a>
-          {% if code != codes.last %}
-            ,&nbsp;
-          {% endif %}
-        {% endfor %}
-        ]&nbsp;&nbsp;&nbsp;
-      {% elsif code_link and code_link != "" and code_link != "N/A" %}
-        <a style="text-decoration: none;" href="{{ code_link }}" target="_blank">Code <i class="fa fa-code"></i></a>&nbsp;&nbsp;&nbsp;
+      {% if code_link and code_link != "" and code_link != "N/A" %}
+        <a href="{{ code_link }}" target="_blank"
+          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          onmouseover="this.style.opacity=0.85"
+          onmouseout="this.style.opacity=1">
+          Code
+        </a>
       {% endif %}
 
-      <!-- Video -->
       {% assign video = post.links_to_video | default: post.video %}
       {% if video and video != "" and video != "N/A" %}
-        <a style="text-decoration: none;" href="{{ video }}" target="_blank">Video <i class="fa fa-film"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="{{ video }}" target="_blank"
+          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          onmouseover="this.style.opacity=0.85"
+          onmouseout="this.style.opacity=1">
+          Video
+        </a>
       {% endif %}
 
-      <!-- Slides -->
       {% if post.slides and post.slides != "" and post.slides != "N/A" %}
-        <a style="text-decoration: none;" href="{{ post.slides }}" target="_blank">Slides <i class="fa fa-file"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="{{ post.slides }}" target="_blank"
+          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          onmouseover="this.style.opacity=0.85"
+          onmouseout="this.style.opacity=1">
+          Slides
+        </a>
       {% endif %}
 
-      <!-- Docs -->
       {% if post.docs and post.docs != "" and post.docs != "N/A" %}
-        <a style="text-decoration: none;" href="{{ post.docs }}" target="_blank">Docs <i class="fa fa-book"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="{{ post.docs }}" target="_blank"
+          style="background:#1f6feb; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          onmouseover="this.style.opacity=0.85"
+          onmouseout="this.style.opacity=1">
+          Docs
+        </a>
       {% endif %}
 
-    </h3>
+    </div>
   </div>
 </div>

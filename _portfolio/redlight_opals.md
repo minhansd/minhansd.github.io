@@ -6,7 +6,7 @@ year: "2022"
 status: "Finished"
 # arxiv: "..."
 include_on_website: true
-weight: 2
+weight: 4
 image: "cell_imaging.png"
 # links_to_code: ""
 # links_to_video: ""

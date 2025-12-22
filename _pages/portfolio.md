@@ -7,8 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.portfolio reversed %}
-  {% if post.include_on_website %}
-    {% include portfolio-single.html %}
-  {% endif %}
+{% assign items = site.portfolio | where: "include_on_website", true | sort: "weight" %}
+{% for post in items %}
+  {% include portfolio-single.html %}
 {% endfor %}

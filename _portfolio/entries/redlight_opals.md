@@ -1,6 +1,6 @@
 ---
 title: "Image Processing of Red-Light-Affected Cells"
-authors: "Victor Habas, <b>Anthony Nguyen</b>, Andrew Cao"
+authors: "<b>Anthony Nguyen</b>, Victor Habas, Andrew Cao"
 venue: "UC San Diego Institute of Engineering in Medicine (IEM) OPALS"
 year: "2022"
 status: "Finished"

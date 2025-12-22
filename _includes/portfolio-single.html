@@ -15,22 +15,23 @@
 {% assign kind = post.kind | default: "publication" %}
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+
   <!-- Image (optional) -->
-  <div style="flex: 0 0 300px; margin-right: 15px;">
+  <div style="flex: 0 0 330px; margin-right: 20px;">
     {% if post.image and post.image != "" and post.image != "N/A" %}
       <img src="/images/portfolio/{{ post.slug }}/{{ post.image }}"
-           width="250"
-           style="border-radius: 5px; display:block;" />
+           style="width: 280px; border-radius: 5px; display:block;" />
     {% elsif post.header.teaser %}
       <img src="{{ post.header.teaser | relative_url }}"
-           width="250"
-           style="border-radius: 5px; display:block;" />
+           style="width: 280px; border-radius: 5px; display:block;" />
     {% endif %}
   </div>
 
-  <div style="min-width: 0;">
+  <!-- Text -->
+  <div style="min-width: 0; max-width: 700px; line-height: 1.3;">
     <h2 style="margin-top: 10px; margin-bottom: 0px;">{{ title }}</h2>
 
+    <!-- Authors/Team line (optional) -->
     {% assign people = post.authors | default: post.team | default: "" %}
     {% if people != "" and people != "N/A" %}
       {% assign people = people | replace: '"{o}', 'ö' %}

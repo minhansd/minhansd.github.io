@@ -1,27 +1,15 @@
 ---
-title: "Xilinx Zynq-based LCD Screen"
-excerpt: "From my 2023 internship at Cognicom to contribute to the company's software-defined radio<br/><img src='/images/portfolio/lcd_cognicom/lcd_on.png'>"
+title: "Xilinx Zynq-Based LCD Screen"
+authors: "<b>Anthony Nguyen</b>"
+venue: "Cognicom, Inc."
+year: "2023"
+status: "Finished"
+# arxiv: "..."
+include_on_website: true
+image: "lcd_on.png"
+# links_to_code: ""
+# links_to_video: ""
+# links_to_website: "https://sites.google.com/view/ucsd-ece5-l4-backup/home"
 collection: portfolio
+permalink: /portfolio/lcd_cognicom
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Project Experience</title>
-</head>
-<body>
-  <ul>
-    <li>
-      Created a bare-metal C program on the Xilinx Zynq using Vivado and Vitis to create a GUI on an LCD screen.
-    </li>
-    <li>
-      Customized driver code for the screen on an STMicroelectronics Nucleo-144 F767ZI board (“white board”),
-      using oscilloscopes to analyze and recreate the sent signals with the Zybo board.
-    </li>
-    <li>
-      Adapted the screen to a Xilinx-based board, allowing the company to integrate it into Vivado and into the final radio system.
-    </li>
-  </ul>
-</body>
-</html>

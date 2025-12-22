@@ -9,7 +9,7 @@ author_profile: true
 
 {% assign shown = site.portfolio | where: "include_on_website", true %}
 
-{% for slug in site.portfolio.portfolio_order %}
+{% for slug in site.data.portfolio_order %}
   {% assign post = shown | where: "slug", slug | first %}
   {% if post %}
     {% include portfolio-single.html %}

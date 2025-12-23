@@ -128,6 +128,15 @@
         </a>
       {% endif %}
 
+      {% if post.technical_report and post.technical_report != "" and post.technical_report != "N/A" %}
+        <a href="{{ post.technical_report }}" target="_blank"
+          style="background:#1F77B4; color:white; padding:4px 10px; border-radius:6px; font-size:0.85rem; text-decoration:none;"
+          onmouseover="this.style.opacity=0.85"
+          onmouseout="this.style.opacity=1">
+          <b>Technical Report</b>
+        </a>
+      {% endif %}
+
       {% assign code_link = post.links_to_code | default: post.code | default: post.repo %}
       {% if code_link and code_link != "" and code_link != "N/A" %}
         <a href="{{ code_link }}" target="_blank"

@@ -13,5 +13,5 @@ image: "trainingSignal.png"
 # links_to_website: "https://sites.google.com/view/ucsd-ece5-l4-backup/home"
 # slides: 
 collection: portfolio
-permalink: /portfolio/pomdp_mcts_erl
+permalink: /portfolio/rfddpm_cognicom
 ---

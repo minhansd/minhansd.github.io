@@ -13,12 +13,12 @@ For future research, I am interested in exploring distributed, multi-agent, and 
 
 I am specifically intrigued by multi-agent robotic systems due to their capabilities to solve important problems in areas such as healthcare robotics and disaster response, which require vastly different toolsets that single-agent systems would struggle to provide.  There are also potential future efficiencies from focusing on the collaboration of simpler robots, as opposed to the development of more complex multifunctional robots, that I am curious about.  Additionally, I am interested in safety and stability, as they are core components of creating trustworthy and reliable autonomy. 
 
-My goals can be summarized in the following research questions:
+My current goals can be summarized in the following research questions:
 - How can distributed, multi-agent, and swarm robotic systems be used to solve complex problems better than single-agent systems?
 - How can we make sure such robotic systems are reliable, safe, and trustworthy?
 - What tradeoffs exist between agent simplicity and a multi-agent system's performance?
 
-However, despite these more specific interests, I am open to exploring any topic, problem, or opportunity across machine learning and robotics.  In general, I enjoy the creation of new ideas based on strong mathematical and theoretical foundations, especially within machine learning and robotics contexts. Any specific interests I have are mainly because I find the applications of the topic especially motivating. 
+However, despite these more specific interests, I am open to exploring any topic, problem, or opportunity across machine learning and robotics.  In general, I enjoy the creation of new ideas based on strong mathematical and theoretical foundations, especially within machine learning and robotics contexts. Any specific interests I have are mainly because I find the applications of the topic especially motivating. I also understand that my interests will evolve as I learn more, and I value all learning.
 
 
 <!--

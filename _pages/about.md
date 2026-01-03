@@ -11,16 +11,17 @@ I am a senior [Electrical Engineering](https://ece.ucsd.edu/) undergraduate stud
 
 **Future Research Goals**
 
-For future research, I am interested in exploring distributed, multi-agent, and swarm systems.  I also want to learn more about scalability, stability, and safety, as well as building on my understanding of topics like optimization, control theory, state estimation, reinforcement learning, and others from my current research. 
+In the future, I hope to make reliable, trustworthy, and efficient robots that can help better society, especially by solving challenging and complex problems beyond human ability.  I find that this overarching goal has developed into interests in a few specific research areas.
 
-I am specifically intrigued by multi-agent robotic systems due to their capabilities to solve important problems in areas such as healthcare robotics and disaster response, which require vastly different toolsets that single-agent systems would struggle to provide.  There are also potential future efficiencies from focusing on the collaboration of simpler robots, as opposed to the development of more complex multifunctional robots, that I am curious about.  Additionally, I am interested in safety and stability, as they are core components of creating trustworthy and reliable autonomy. 
+I am very interested in planning and control under uncertainty, as accounting for uncertainty is essential for robots to perform well in real-world settings. In the same vein, I am drawn to system stability and robot safety–some of the cornerstone topics in robot reliability and trustworthiness.
 
-My current goals can be summarized in the following research questions:
-- How can distributed, multi-agent, and swarm robotic systems be used to solve complex and important problems better than single-agent systems?
-- How can we make sure such robotic systems are reliable, safe, and trustworthy?
-- What tradeoffs exist between agent simplicity, agent count, and overall system performance in multi-agent systems?
+Also, in line with my long-term goals, I have become intrigued by distributed, multi-agent, and swarm robotic systems due to their capabilities to solve important problems in areas such as healthcare robotics and disaster response, which can require vastly different toolsets that single-agent systems would struggle to provide.  I especially want to explore some of the more theoretical aspects of multi-agent systems, such as coordination algorithms, as well as exploring the intricacies of decentralized systems.
 
-However, despite these more specific interests, I am open to exploring any topic, problem, or opportunity across machine learning and robotics.  In general, I enjoy the creation of new ideas based on strong mathematical and theoretical foundations, especially within machine learning and robotics contexts. Any specific interests I have are mainly because I find the applications of the topic especially motivating. I also understand that my interests will evolve as I learn more, and I value all learning.
+While I am very motivated by the practical implications of the topics I have just listed, I am equally fascinated by their general mathematical and theoretical foundations in areas like optimization, stochastic processes, dynamical systems, and control theory, and I hope to continue building on my knowledge of these areas. 
+
+However, despite these more specific interests, I am open to exploring any topic, problem, or opportunity across machine learning and robotics. My interests above come from my current experiences and knowledge in the robotics and machine learning field, and they will evolve as I learn more across different parts of the field.
+
+In general, I enjoy the creation of new ideas based on strong mathematical and theoretical foundations, especially within machine learning and robotics contexts.  
 
 
 <!--

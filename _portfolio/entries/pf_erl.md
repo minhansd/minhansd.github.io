@@ -1,6 +1,6 @@
 ---
 title: "Variational Particle Flow Particle Filter Analysis and Experimental Evaluation"
-excerpt: "Technical Report and Code Coming Soon"
+# excerpt: ""
 authors: "<b>Anthony Nguyen</b>"
 venue: "UC San Diego ECE 199"
 year: "2025"

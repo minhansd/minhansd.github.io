@@ -1,5 +1,5 @@
 ---
-title: "POMDP Algorithms with Variational Particle Flow Particle Filtering"
+title: "POMDP Algorithms with Variational Inference-based Particle Flow Filtering"
 excerpt: ""
 authors: "<b>Anthony Nguyen</b>"
 venue: "Existential Robotics Laboratory (UC San Diego)"

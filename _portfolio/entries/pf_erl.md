@@ -1,5 +1,5 @@
 ---
-title: "Variational Particle Flow Particle Filter Analysis and Experimental Evaluation"
+title: "An Analysis and Experimental Evaluation of the Variational Inference-based Particle Flow Filter"
 excerpt: "I completed this project with advice from Professor Nikolay A. Atanasov as part of UCSD ECE 199: Independent Study for Undergraduates."
 authors: "<b>Anthony Nguyen</b>"
 venue: "UC San Diego ECE 199"

@@ -7,7 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a senior [Electrical Engineering](https://ece.ucsd.edu/) undergraduate student at [UC San Diego (UCSD)](https://ucsd.edu/).  I am currently working on undergraduate research under Professor [Nikolay A. Atanasov](https://natanaso.github.io) in the [Existential Robotics Laboratory (ERL)](https://existentialrobotics.org/index.html), relating to the application of particle flow filtering to POMDP algorithms, with some general topics being optimal control, reinforcement learning, decision theory, belief-space planning, and state estimation.  I also have research experience in denoising diffusion probabilistic models (DDPMs), applying it for radio-frequency (RF) signal data generation as part of an independent research project.
+I am a senior [Electrical Engineering](https://ece.ucsd.edu/) undergraduate student at [UC San Diego (UCSD)](https://ucsd.edu/).  I am currently working on undergraduate research under Professor [Nikolay A. Atanasov](https://natanaso.github.io) in the [Existential Robotics Laboratory (ERL)](https://existentialrobotics.org/index.html), relating to the application of particle flow filtering to POMDP algorithms, with some general topics being optimal control, reinforcement learning, decision theory, belief-space planning, and state estimation.
+
+<!--
+I also have research experience in denoising diffusion probabilistic models (DDPMs), applying it for radio-frequency (RF) signal data generation as part of an independent research project.
+-->
 
 <!--
 **Future Research Goals**
